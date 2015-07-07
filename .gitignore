@@ -1,0 +1,5 @@
+.vagrant
+*.box
+
+src/*
+!src/.gitkeep
