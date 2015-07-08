@@ -1,7 +1,7 @@
 Vagrant meteor-gazelle Build
 ============================
 Once set up, the gazelle source files will be present in `src/`, which is shared to `/var/www/` on the machine.
-Port 3000 will be forwarded to host ports 3000.
+Port 3000 will be forwarded to host port 3000.
 You can access the virtualbox's web server with the url localhost:3000
 
 Prerequisites
