@@ -12,7 +12,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.synced_folder "src/", "/var/www/"
   config.vm.provision :shell, :path => "gazelle-setup.sh"
-  config.vm.network :forwarded_port, guest: 3000, host: 3000 
+  config.vm.network :forwarded_port, guest: 3000, host: 3000
+  config.vm.network :forwarded_port, guest: 8080, host: 8080
 
   config.ssh.forward_x11 = "true"
   # The url from where the 'config.vm.box' box will be fetched if it
