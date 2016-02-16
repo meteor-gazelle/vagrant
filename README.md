@@ -12,7 +12,7 @@ Prerequisites
 Usage
 -----
 1.  Clone this repo.
-    * Download the base box from here: https://www.dropbox.com/s/3r6d9c8x5dvibw6/Gazelle.box?dl=0 and put it inside the cloned repo.
+    * Download the base box from here: https://www.dropbox.com/s/3r6d9c8x5dvibw6/Gazelle.box?dl=1 and put it inside the cloned repo.
 2.  Navigate to the repo's location and run the command `vagrant box add 'Gazelle' 'Gazelle.box'`
 2.  Boot the box from the repo directory: `vagrant up`. Provisioning will take a little while.
 3.  Navigate to `/var/www` on the box, and run the command `meteor run --settings settings.json`. It will download and run meteor. You can then navigate

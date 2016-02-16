@@ -1,5 +1,6 @@
 .vagrant
 *.box
+npm-debug.log
 
 src/*
 !src/.gitkeep

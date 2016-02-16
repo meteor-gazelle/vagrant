@@ -28,7 +28,7 @@ sudo rm -rf /usr/local/openresty/
 sudo rm /usr/sbin/openresty
 
 #Install meteor
-##TODO Install this as the user 'vagrant' instead of 'root'
+## TODO Install this as the user 'vagrant' instead of 'root'
 curl https://install.meteor.com/ | sh
 
 echo "Dependencies installed"
@@ -56,10 +56,12 @@ echo "Gazelle update done"
 echo "Installing node..."
 sudo sh -c "curl -sL https://deb.nodesource.com/setup | bash -"
 sudo apt-get install -y nodejs
-echo "Installing new version of NPM..."
-cd ~/
-sudo npm -g install npm@2.1.1 #Install the "fixed" version of npm to avoid lock file errors
 echo "Node installed"
+
+echo "Initializing NPM..."
+sudo npm -g install eslint
+cd /var/www && npm install scss-formatter
+echo "NPM initialized"
 
 echo "Installing elasticsearch..."
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.2.deb
